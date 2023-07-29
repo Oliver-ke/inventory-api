@@ -10,10 +10,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
     "@apollo/server": "^4.9.0",
-    "graphql": "^16.7.1"
+    "graphql": "^16.7.1",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.1.6",
+    "typeorm": "^0.3.17"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
