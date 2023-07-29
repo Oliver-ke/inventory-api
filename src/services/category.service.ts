@@ -1,5 +1,5 @@
-import { AppDataSource } from "src/data-source";
-import { Category } from "src/entities/Category";
+import { AppDataSource } from "../data-source";
+import { Category } from "../entities/Category";
 
 class CategoryService {
   async getCategories() {

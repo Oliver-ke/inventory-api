@@ -1,11 +1,21 @@
 import ItemService from "../services/item.service";
-import { tags } from "../data/mock";
 import TagService from "../services/tag.service";
+import CategoryService from "../services/category.service";
+import SupplyService from "../services/supply.service";
 
 const resolvers = {
   Query: {
+    items: async () => {
+      return await ItemService.getItems();
+    },
     tags: async () => {
       return await TagService.getTags();
+    },
+    categories: async () => {
+      return await CategoryService.getCategories();
+    },
+    supplies: async () => {
+      return await SupplyService.getSupplies();
     },
   },
   Mutation: {

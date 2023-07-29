@@ -10,3 +10,8 @@ interface IAddItemArgs {
   category?: string;
   supply?: string;
 }
+
+interface IAddSupplyArgs {
+  receivedBy: string;
+  items: string[];
+}
